@@ -1,0 +1,9 @@
+public class previred{
+	public static void main(String[] args) {
+		String variable1 = "Previred";
+		System.out.println(variable1);
+		StringBuilder variable2 = new StringBuilder(variable1);
+		variable1 = variable2.reverse().toString();
+		System.out.println(variable1);
+	}
+}
