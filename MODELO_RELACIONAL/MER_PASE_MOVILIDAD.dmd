@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MER_PASE_MOVILIDAD" id="04F576FB-31BE-AA4B-A5C8-A01080AF3FF0" version="3.5">
+<createdBy>Gabriel</createdBy>
+<createdTime>2022-06-30 23:32:45 UTC</createdTime>
+<ownerDesignName>MER_PASE_MOVILIDAD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>04F576FB-31BE-AA4B-A5C8-A01080AF3FF0</designId>
+</OSDM_Design>
