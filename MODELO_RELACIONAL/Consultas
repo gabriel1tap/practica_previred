@@ -1,0 +1,16 @@
+Select count(id_vacuna)as 'Cantidad Vacuna Hoy'
+from vacuna
+where fecha_vacuna = sysdate;
+
+Select count(v.id_vacuna) as 'Cantidad Vacuna Pfizer Hoy'
+from vacuna v , tipo_vacuna t 
+where v.id_tipo = t.id_tipo and v.fecha_vacuna = sysdate and t.nombre_vacuna = 'Pfizer';
+
+Select count(id_vacuna)as 'Cantidad Vacuna Menores de edad'
+from vacuna
+where fecha_vacuna = sysdate and edad < 18 ;
+
+Select count(v.id_vacuna)as 'Cantidad Vacunas Coquimbo'
+from vacuna v, centro_salud c, comuna o, ciudad i, region r 
+where v.id_centro = c.id_centro and c.id_comuna = o.id_comuna and o.id_ciudad = i.id_ciudad and i.id_region = r.id_region 
+and r.nombre_region = 'coquimbo ' and v.fecha_vacuna = sysdate;
